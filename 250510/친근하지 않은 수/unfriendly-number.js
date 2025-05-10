@@ -1,8 +1,7 @@
-const fs = require('fs');
-const N = Number(fs.readFileSync(0).toString().trim());
+const N = +require('fs').readFileSync(0);
 
 let cnt = 0;
 for(let i=1; i<=N; i++){
-    if(N%2 == 0 || N%3 == 0 || N%5 == 0) cnt++;
+    cnt = (i%2==0 || i%3==0 || i%5==0 ? cnt+=1 : cnt);
 }
-console.log(cnt);
+console.log(N-cnt);
