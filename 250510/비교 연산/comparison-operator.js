@@ -1,3 +1,13 @@
 const fs = require("fs");
 const [A, B] = fs.readFileSync(0).toString().trim().split(' ').map(Number);
-console.log(+(A>=B) + '\n' + +(A>B) + '\n' + +(B>=A) + '\n' + +(B>A) + '\n' + +(A==B) + '\n' + +(A!=B));
+
+const result = [
+    +(A>=B),
+    +(A>B),
+    +(B>=A),
+    +(B>A),
+    +(A==B),
+    +(A!=B)
+];
+
+console.log(result.join('\n'));
