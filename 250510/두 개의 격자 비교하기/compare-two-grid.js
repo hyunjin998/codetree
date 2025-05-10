@@ -7,6 +7,7 @@ const value = input.slice(1).map(row => row.split(' ').map(Number));
 const arr1 = value.slice(0, N);
 const arr2 = value.slice(N, N+M);
 
+console.log(N + ' ' + M);
 for(let i=0; i<N; i++){
     let result = [];
     for(let j=0; j<M; j++){
