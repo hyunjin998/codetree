@@ -1,4 +1,4 @@
 const fs = require("fs");
 const array = fs.readFileSync(0).toString().trim().split(' ').map(Number);
-array.sort();
+array.sort((a, b) => a - b);
 console.log(array[0]);
