@@ -1,2 +1,2 @@
 const a = Number(require('fs').readFileSync(0).toString());
-console.log(a>113 ? '1' : '0');
+console.log(a>=113 ? '1' : '0');
